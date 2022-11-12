@@ -30,8 +30,8 @@ typedef struct _MAT3X4
 
 
 
-float targetWindowWidth = 1920;
-float targetWindowHeight = 1080;
+float targetWindowWidth = 3840;
+float targetWindowHeight = 2160;
 float targetWindowPosX = 0;
 float targetWindowPosY = 0;
 
