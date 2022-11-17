@@ -4,8 +4,8 @@
 
 [Version]
 Signature="$WINDOWS NT$"
-Class=Sample ; TODO: edit Class
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Class=DellHardware ; TODO: edit Class
+ClassGuid={C1F83B3E-4A95-4ABC-8A4E-752F0DC32F49} ; TODO: edit ClassGuid
 Provider=%ManufacturerName%
 CatalogFile=CheatDriver.cat
 DriverVer= ; TODO: set DriverVer in stampinf property pages
@@ -18,9 +18,9 @@ CheatDriver_Device_CoInstaller_CopyFiles = 11
 ; ================= Class section =====================
 
 [ClassInstall32]
-Addreg=SampleClassReg
+Addreg=DellHardwareClassReg
 
-[SampleClassReg]
+[DellHardwareClassReg]
 HKR,,,0,%ClassName%
 HKR,,Icon,,-5
 
@@ -80,8 +80,8 @@ KmdfLibraryVersion = $KMDFVERSION$
 
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
-ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
-ClassName="Samples" ; TODO: edit ClassName
+ManufacturerName="Dell" ;TODO: Replace with your manufacturer name
+ClassName="DellHardware" ; TODO: edit ClassName
 DiskName = "CheatDriver Installation Disk"
 CheatDriver.DeviceDesc = "CheatDriver Device"
 CheatDriver.SVCDESC = "CheatDriver Service"
