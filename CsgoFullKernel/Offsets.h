@@ -134,8 +134,8 @@ namespace hazedumper {
 		#define dwPlayerResource  0x3227FF0
 		#define dwRadarBase  0x523291C
 		#define dwSensitivity  0xDEAB80
-		#define dwSensitivityPtr  0xDC5038
-		#define dwSetClanTag  0x8A410
+		#define dwSensitivityPtr  0xDEAB80
+		#define dwSetClanTag  0x8DA80
 		#define dwViewMatrix  0x4DECC74
 		#define dwWeaponTable  0x525A4F4
 		#define dwWeaponTableIndex  0x326C
