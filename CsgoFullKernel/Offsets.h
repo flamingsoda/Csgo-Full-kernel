@@ -113,7 +113,7 @@ namespace hazedumper {
 		#define dwClientState_PlayerInfo  0x52C0
 		#define dwClientState_State  0x108
 		#define dwClientState_ViewAngles  0x4D90
-		#define dwEntityList  0x4DFBE74
+		#define dwEntityList  0x4DFCE74
 		#define dwForceAttack  0x322AC7C
 		#define dwForceAttack2  0x322AC88
 		#define dwForceBackward  0x322ACB8
