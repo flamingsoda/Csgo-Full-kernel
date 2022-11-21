@@ -143,7 +143,7 @@ namespace hazedumper {
 		#define dwZoomSensitivityRatioPtr  0xDF1380
 		#define dwbSendPackets  0xDCF92
 		#define dwppDirect3DDevice9  0xA62C0
-		#define find_hud_element  0x5385E560
+		#define find_hud_element  0x543EE560
 		#define force_update_spectator_glow  0x3D7CFA
 		#define interface_engine_cvar  0x3FA9C
 		#define is_c4_owner  0x3E5500
