@@ -3,4 +3,4 @@
  
 this is for resolution 3840x2160
 
-offsets updated for game version 1.38.4.6
+offsets updated for game version 1.38.4.8
