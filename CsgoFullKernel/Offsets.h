@@ -113,37 +113,37 @@ namespace hazedumper {
 		#define dwClientState_PlayerInfo  0x52C0
 		#define dwClientState_State  0x108
 		#define dwClientState_ViewAngles  0x4D90
-		#define dwEntityList  0x4DFCE74
-		#define dwForceAttack  0x322AC7C
-		#define dwForceAttack2  0x322AC88
-		#define dwForceBackward  0x322ACB8
-		#define dwForceForward  0x322ACAC
-		#define dwForceJump  0x52B8BFC
-		#define dwForceLeft  0x322ACC4
-		#define dwForceRight  0x322ACD0
+		#define dwEntityList  0x4DFDE84
+		#define dwForceAttack  0x322BC8C
+		#define dwForceAttack2  0x322BC98
+		#define dwForceBackward  0x322BCC8
+		#define dwForceForward  0x322BCBC
+		#define dwForceJump  0x52B9C0C
+		#define dwForceLeft  0x322BCD4
+		#define dwForceRight  0x322BCE0
 		#define dwGameDir  0x63AD80
-		#define dwGameRulesProxy  0x532C42C
-		#define dwGetAllClasses  0xE08FDC
+		#define dwGameRulesProxy  0x532D43C
+		#define dwGetAllClasses  0xE09FDC
 		#define dwGlobalVars  0x59EE58
-		#define dwGlowObjectManager  0x5357948
-		#define dwInput  0x525A448
+		#define dwGlowObjectManager  0x5358958
+		#define dwInput  0x525B458
 		#define dwInterfaceLinkList  0x999E44
-		#define dwLocalPlayer  0xDE7964
-		#define dwMouseEnable  0x52360A8
-		#define dwMouseEnablePtr  0x5236078
-		#define dwPlayerResource  0x3229020
-		#define dwRadarBase  0x523394C
-		#define dwSensitivity  0xDEBB80
-		#define dwSensitivityPtr  0xDEBB80
+		#define dwLocalPlayer  0xDE8964
+		#define dwMouseEnable  0x52370B8
+		#define dwMouseEnablePtr  0x5237088
+		#define dwPlayerResource  0x322A030
+		#define dwRadarBase  0x523495C
+		#define dwSensitivity  0xDECB80
+		#define dwSensitivityPtr  0xDECB80
 		#define dwSetClanTag  0x8DA80
-		#define dwViewMatrix  0x4DEDCA4
-		#define dwWeaponTable  0x525B524
+		#define dwViewMatrix  0x4DEECB4
+		#define dwWeaponTable  0x525C534
 		#define dwWeaponTableIndex  0x326C
-		#define dwYawPtr  0xDEB910
-		#define dwZoomSensitivityRatioPtr  0xDF1380
+		#define dwYawPtr  0xDEC910
+		#define dwZoomSensitivityRatioPtr  0xDF2380
 		#define dwbSendPackets  0xDCF92
 		#define dwppDirect3DDevice9  0xA62C0
-		#define find_hud_element  0x543EE560
+		#define find_hud_element  0x2962E560
 		#define force_update_spectator_glow  0x3D7CFA
 		#define interface_engine_cvar  0x3FA9C
 		#define is_c4_owner  0x3E5500
@@ -151,8 +151,8 @@ namespace hazedumper {
 		#define m_bIsLocalPlayer  0x3628
 		#define m_flSpawnTime  0x103C0
 		#define m_pStudioHdr  0x2950
-		#define m_pitchClassPtr  0x5235FA0
-		#define m_yawClassPtr  0xDEB910
+		#define m_pitchClassPtr  0x5236FB0
+		#define m_yawClassPtr  0xDEC910
 		#define model_ambient_min  0x5A118C
 		#define set_abs_angles  0x1E5C50
 		#define set_abs_origin  0x1E5A90
