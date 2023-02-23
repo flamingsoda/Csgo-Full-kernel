@@ -141,8 +141,17 @@ void CsgoMain()
 			float Entity_y = feetPosScreen.y;
 			float Entity_w = height / 2;
 
-			RECT boxEsp = { Entity_x + Entity_w, Entity_y + height, Entity_x, Entity_y };
-			FrameRect(hdc, &boxEsp, brush, 1);
+			POINT vertices[8];
+			vertices[0] = { static_cast<LONG>(feetPosScreen.x - width), static_cast<LONG>(feetPosScreen.y) };
+			vertices[1] = { static_cast<LONG>(headScreen.x - width), static_cast<LONG>(headScreen.y - height) };
+			vertices[2] = { static_cast<LONG>(headScreen.x + width), static_cast<LONG>(headScreen.y - height) };
+			vertices[3] = { static_cast<LONG>(feetPosScreen.x + width), static_cast<LONG>(feetPosScreen.y) };
+			vertices[4] = { static_cast<LONG>(headScreen.x + width), static_cast<LONG>(headScreen.y + height) };
+			vertices[5] = { static_cast<LONG>(headScreen.x - width), static_cast<LONG>(headScreen.y + height) };
+			vertices[6] = { static_cast<LONG>(feetPosScreen.x - width), static_cast<LONG>(feetPosScreen.y) };
+			vertices[7] = vertices[0];
+
+			Polyline(hdc, vertices, 8);
 		}
 
 
