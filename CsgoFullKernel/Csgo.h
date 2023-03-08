@@ -100,7 +100,7 @@ void CsgoMain()
 		float x = targetWindowWidth / 2 - punchAngle.y;
 		float y = targetWindowHeight / 2 + punchAngle.x;
 
-		
+
 		RECT rect = { x - 2, y - 2, x + 2, y + 2 };
 		FrameRect(hdc, &rect, brush, 2);
 
@@ -125,27 +125,35 @@ void CsgoMain()
 			if (teamNum == localTeam)
 				continue;
 
+			// Calculate the position of the player's feet and head on the screen
 			Vector3 feetPos = ReadMemory<Vector3>(currEnt + m_vecOrigin);
 			Vector2 feetPosScreen = WorldToScreen(feetPos, viewMatrix);
 
 			DWORD bonePtr = ReadMemory<DWORD>(currEnt + m_dwBoneMatrix);
-			MAT3X4 boneMatrix = ReadMemory<MAT3X4>(bonePtr + 0x30 * 8); //head
+			MAT3X4 boneMatrix = ReadMemory<MAT3X4>(bonePtr + 0x30 * 8);
 			Vector3 headPos = { boneMatrix.c[0][3], boneMatrix.c[1][3], boneMatrix.c[2][3] };
-			headPos.z += 8.75;
-			Vector2 headScreen = WorldToScreen(headPos, viewMatrix);
+			Vector2 headPosScreen = WorldToScreen(headPos, viewMatrix);
 
-			int height = headScreen.y - feetPosScreen.y;
+			// Calculate the dimensions of the box based on the player's head and feet
+			int height = headPosScreen.y - feetPosScreen.y;
 			int width = height / 4;
 
-			float Entity_x = feetPosScreen.x - width;
-			float Entity_y = feetPosScreen.y;
-			float Entity_w = height / 2;
-			
-			int headRadius = height / 2;
-			Ellipse(hdc, headScreen.x - headRadius, headScreen.y - headRadius, headScreen.x + headRadius, headScreen.y + headRadius);
+			// Calculate the position and size of the box for the player's head
+			float head_x = headPosScreen.x - width;
+			float head_y = headPosScreen.y - height / 8;
+			float head_w = height / 4;
+			RECT headBox = { head_x + head_w, head_y + height / 4, head_x, head_y };
 
-			RECT boxEsp = { Entity_x + Entity_w, Entity_y + height, Entity_x, Entity_y };
-			FrameRect(hdc, &boxEsp, brush, 1);
+			// Calculate the position and size of the box for the whole player
+			float player_x = feetPosScreen.x - width;
+			float player_y = feetPosScreen.y;
+			float player_w = width * 2;
+			float player_h = height + (height / 4);
+			RECT playerBox = { player_x + player_w, player_y + player_h, player_x, player_y };
+
+			// Draw the boxes on the screen
+			FrameRect(hdc, &playerBox, brush, 1);
+			FrameRect(hdc, &headBox, brush, 1);
 		}
 
 
