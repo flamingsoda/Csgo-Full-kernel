@@ -104,7 +104,7 @@ namespace hazedumper {
 		#define clientstate_last_outgoing_command  0x4D2C
 		#define clientstate_net_channel  0x9C
 		#define convar_name_hash_table  0x301A0
-		#define dwClientState  0x59F194
+		#define dwClientState  0x59F19C
 		#define dwClientState_GetLocalPlayer  0x180
 		#define dwClientState_IsHLTV  0x4D48
 		#define dwClientState_Map  0x28C
@@ -113,48 +113,48 @@ namespace hazedumper {
 		#define dwClientState_PlayerInfo  0x52C0
 		#define dwClientState_State  0x108
 		#define dwClientState_ViewAngles  0x4D90
-		#define dwEntityList  0x4DFDE84
-		#define dwForceAttack  0x322BC8C
-		#define dwForceAttack2  0x322BC98
-		#define dwForceBackward  0x322BCC8
-		#define dwForceForward  0x322BCBC
-		#define dwForceJump  0x52B9C0C
-		#define dwForceLeft  0x322BCD4
-		#define dwForceRight  0x322BCE0
+		#define dwEntityList  0x4DFFEF4
+		#define dwForceAttack  0x322DCFC
+		#define dwForceAttack2  0x322DD08
+		#define dwForceBackward  0x322DD38
+		#define dwForceForward  0x322DD2C
+		#define dwForceJump  0x52BBC7C
+		#define dwForceLeft  0x322DD44
+		#define dwForceRight  0x322DD50
 		#define dwGameDir  0x63AD80
-		#define dwGameRulesProxy  0x532D43C
-		#define dwGetAllClasses  0xE09FDC
-		#define dwGlobalVars  0x59EE58
-		#define dwGlowObjectManager  0x5358958
-		#define dwInput  0x525B458
-		#define dwInterfaceLinkList  0x999E44
-		#define dwLocalPlayer  0xDE8964
-		#define dwMouseEnable  0x52370B8
-		#define dwMouseEnablePtr  0x5237088
-		#define dwPlayerResource  0x322A030
-		#define dwRadarBase  0x523495C
-		#define dwSensitivity  0xDECB80
-		#define dwSensitivityPtr  0xDECB80
+		#define dwGameRulesProxy  0x532F4AC
+		#define dwGetAllClasses  0xE0BFDC
+		#define dwGlobalVars  0x59EE60
+		#define dwGlowObjectManager  0x535A9C8
+		#define dwInput  0x525D4C8
+		#define dwInterfaceLinkList  0x99BC84
+		#define dwLocalPlayer  0xDEA964
+		#define dwMouseEnable  0x5239128
+		#define dwMouseEnablePtr  0x52390F8
+		#define dwPlayerResource  0x322C0A0
+		#define dwRadarBase  0x52369CC
+		#define dwSensitivity  0xDEEB80
+		#define dwSensitivityPtr  0xDEEB80
 		#define dwSetClanTag  0x8DA80
-		#define dwViewMatrix  0x4DEECB4
-		#define dwWeaponTable  0x525C534
+		#define dwViewMatrix  0x4DF0D24
+		#define dwWeaponTable  0x525E5A4
 		#define dwWeaponTableIndex  0x326C
-		#define dwYawPtr  0xDEC910
-		#define dwZoomSensitivityRatioPtr  0xDF2380
-		#define dwbSendPackets  0xDCF92
+		#define dwYawPtr  0xDEE910
+		#define dwZoomSensitivityRatioPtr  0xDF4380
+		#define dwbSendPackets  0xDD2B2
 		#define dwppDirect3DDevice9  0xA62C0
-		#define find_hud_element  0x2962E560
-		#define force_update_spectator_glow  0x3D7CFA
+		#define find_hud_element  0x5167FBD0
+		#define force_update_spectator_glow  0x3D91CA
 		#define interface_engine_cvar  0x3FA9C
-		#define is_c4_owner  0x3E5500
+		#define is_c4_owner  0x3E69E0
 		#define m_bDormant  0xED
 		#define m_bIsLocalPlayer  0x3628
 		#define m_flSpawnTime  0x103C0
 		#define m_pStudioHdr  0x2950
-		#define m_pitchClassPtr  0x5236FB0
-		#define m_yawClassPtr  0xDEC910
-		#define model_ambient_min  0x5A118C
-		#define set_abs_angles  0x1E5C50
-		#define set_abs_origin  0x1E5A90
+		#define m_pitchClassPtr  0x5239020
+		#define m_yawClassPtr  0xDEE910
+		#define model_ambient_min  0x5A1194
+		#define set_abs_angles  0x1E72D0
+		#define set_abs_origin  0x1E7110
 	} // namespace signatures
 } // namespace hazedumper
